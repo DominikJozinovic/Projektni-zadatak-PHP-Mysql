@@ -6,13 +6,13 @@
 	# Database connection
 	include ("dbconn.php");
 
-    if(isset($_GET['menu'])) { $menu   = (int)$_GET['menu']; }
+    if(isset($_GET['novo'])) { $novo  = (int)$_GET['novo']; }
 	if(isset($_GET['action'])) { $action   = (int)$_GET['action']; }
 	
 	
     if(!isset($_POST['_action_']))  { $_POST['_action_'] = FALSE;  }
 	
-	if (!isset($menu)) { $menu = 1; }
+	if (!isset($novo)) { $novo = 1; }
 	
 
 	
@@ -49,25 +49,21 @@ print '
 
 
 
-if (!isset($menu) || $menu == 1) { include("home.php");}
+if (!isset($novo) || $novo == 1) { include("news/news3.php");}
 
 # News
-else if ($menu == 2) { include("trenirajkao.php"); }
+else if ($novo == 2) { include("news/news1.php"); }
 
 # Contact
-else if ($menu == 3) { include("news.php"); }
+else if ($novo == 3) { include("news/news2.php"); }
 
 # About us
-else if ($menu == 4) { include("contact.php"); }
+else if ($novo == 4) { include("news/news4.php"); }
 
 # Register
-else if ($menu == 5) { include("about.php"); }
+else if ($novo == 5) { include("news/news5.php"); }
 
-# Signin
-else if ($menu == 6) { include("gallery.php"); }
 
-# Admin webpage
-else if ($menu == 7) { include("clanstvo.php"); }
 
 print '
       <footer class="footer-distributed">

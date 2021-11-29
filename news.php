@@ -1,7 +1,11 @@
 <?php
 
+
+
+
+
 print '
-      <main>
+     
       
       <div class="blog-section">
           <div class="section-content blog">
@@ -26,7 +30,7 @@ print '
                    
                 </div>
                 <div class="blog-view">
-                    <a href="news/news3.html" class="button">Pročitaj više</a>
+                    <a href="newsindex.php?novo=1" class="button">Pročitaj više</a>
                 </div>
                 <div class="posted-date">
                     <p>Objavljeno 10.rujna 2021.</p>
@@ -43,7 +47,7 @@ print '
                    
                 </div>
                 <div class="blog-view">
-                    <a href="news/news1.html" class="button">Pročitaj više</a>
+                    <a href="newsindex.php?novo=2" class="button">Pročitaj više</a>
                 </div>
                 <div class="posted-date">
                     <p>Objavljeno 08.kolovoza 2021.</p>
@@ -60,7 +64,7 @@ print '
                    
                 </div>
                 <div class="blog-view">
-                    <a href="news/news2.html" class="button">Pročitaj više</a>
+                    <a href="newsindex.php?novo=3" class="button">Pročitaj više</a>
                 </div>
                 <div class="posted-date">
                     <p>Objavljeno 14.lipnja 2021.</p>
@@ -77,7 +81,7 @@ print '
                    
                 </div>
                 <div class="blog-view">
-                    <a href="news/news4.html" class="button">Pročitaj više</a>
+                    <a href="newsindex.php?novo=4" class="button">Pročitaj više</a>
                 </div>
                 <div class="posted-date">
                     <p>Objavljeno 24.prosinca 2020.</p>
@@ -94,7 +98,7 @@ print '
                    
                 </div>
                 <div class="blog-view">
-                    <a href="news/news5.html" class="button">Pročitaj više</a>
+                    <a href="newsindex.php?novo=5" class="button">Pročitaj više</a>
                 </div>
                 <div class="posted-date">
                     <p>Objavljeno 16.rujna 2020.</p>
@@ -104,21 +108,5 @@ print '
         </div>
     </div>
 </div>     
-</main>';
+';
 ?>
-
-        
-      
-      
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-          

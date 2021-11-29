@@ -272,6 +272,7 @@ transform: translateZ(-25px) rotateX(-90deg);
 
  position:relative;
  clear: both;
+ 
 
 
 
@@ -281,7 +282,7 @@ transform: translateZ(-25px) rotateX(-90deg);
 
 .footer-distributed .footer-left p {
   color: #8f9296;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
 
 }
@@ -416,6 +417,7 @@ animation: animate 3.7s ease;
 }
 
 .social{
+  color:darkslategray;
 display: flex;
 justify-content: space-between;
 font-weight: 700;
@@ -426,6 +428,7 @@ opacity: 1;
 -webkit-animation: animate 4.3s ease;
 
 animation: animate 4.3s ease;
+text-transform: uppercase;
 }
 
 
@@ -1009,7 +1012,7 @@ backface-visibility: hidden;
  }
 
  ::placeholder{
-   color:slategray;
+   color:rgb(162, 183, 204);
    font-size: 12px;
  }
 
@@ -1029,7 +1032,12 @@ backface-visibility: hidden;
    
 
  }
+
+ .btnc:hover{
+   color: goldenrod;
+ }
  .submit-btn{
+  color: goldenrod;
   width:100%;
   background: transparent;
   border: 1px solid goldenrod;

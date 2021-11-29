@@ -36,7 +36,7 @@ print '
             
             </form>
             <button type="button" class="btnc" onclick="openLogin()">Prijavi se s postojećim računom</button>
-            <a href="">Zaboravljena lozinka</a>
+            
             </div>
           </div>
           </div>
