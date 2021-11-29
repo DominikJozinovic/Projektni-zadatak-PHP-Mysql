@@ -74,7 +74,7 @@ print '
         <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
         <div class="footer-right">
   
-          <a href="https://github.com/DominikJozinovic/-Projektni-zadatak-HTML-CSS"><img  src="gallery/Octocat.png" title="Github" alt="Github"/></a>
+          <a href="https://github.com/DominikJozinovic/Projektni-zadatak-PHP-Mysql"><img  src="gallery/Octocat.png" title="Github" alt="Github"/></a>
           
   
         </div>

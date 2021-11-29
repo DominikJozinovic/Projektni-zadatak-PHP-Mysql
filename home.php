@@ -12,7 +12,7 @@ print '
          
           <h1>Welcome to the Arena</h1>
           <h2>Od najjačih za najjače</h2>
-         <span class="gumb"> <a href ="clanstvo.php"></a></div></span>
+         <span class="gumb"> <a href ="index.php?menu=7"></a></div></span>
         </div>';
         
       
