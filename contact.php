@@ -1,5 +1,5 @@
 <?php
-
+include ("contact_mail.php");
 print '
       
 
@@ -13,11 +13,22 @@ print '
       </div>
 			<div class="right">
 				<h2>Kontaktirajte nas</h2>
-				<input type="text" class="field" placeholder="Ime i prezime">
-				<input type="email" class="field" placeholder="Email">
-				<input type="number" class="field" placeholder="Broj mobitela/telefona">
-				<textarea placeholder="Poruka" class="field"></textarea>
-				<button class="btn">Pošalji</button>
+				<form method="POST">
+				<input type="text" class="field" id="fname" placeholder="Ime i prezime" required>
+				<input type="email" class="field" id="email" placeholder="Email" required>
+				<input type="number" class="field" placeholder="Broj mobitela/telefona" required>
+				<select name="country" class="field" id="country">
+				<option value=""class="field">Odaberite državu stanovanja</option>';
+				
+				$query  = "SELECT * FROM countries";
+				$result = @mysqli_query($MySQL, $query);
+				while($row = @mysqli_fetch_array($result)) {
+					print '<option class="field" value="' . $row['country_code'] . '">' . $row['country_name'] . '</option>';
+				}
+			print '
+				<textarea id="sadrzaj" placeholder="Poruka" class="field" required></textarea>
+				<button class="btn" name="submit" >Pošalji</button>
+				</form> 
 			</div>
 		</div>
 	</div>

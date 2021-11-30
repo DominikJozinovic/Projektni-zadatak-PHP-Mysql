@@ -5,7 +5,7 @@
 	
 	# Database connection
 	include ("dbconn.php");
-
+  include ("message.php");
     if(isset($_GET['menu'])) { $menu   = (int)$_GET['menu']; }
 	if(isset($_GET['action'])) { $action   = (int)$_GET['action']; }
 	
@@ -54,23 +54,22 @@ if (isset($_SESSION['message'])) {
 
 if (!isset($menu) || $menu == 1) { include("home.php");}
 
-# News
+
 else if ($menu == 2) { include("trenirajkao.php"); }
 
-# Contact
+
 else if ($menu == 3) { include("news.php"); }
 
-# About us
+
 else if ($menu == 4) { include("contact.php"); }
 
-# Register
+
 else if ($menu == 5) { include("about.php"); }
 
-# Signin
 else if ($menu == 6) { include("gallery.php"); }
 
-# Admin webpage
 else if ($menu == 7) { include("clanstvo.php"); }
+
 
 print '
       <footer class="footer-distributed">

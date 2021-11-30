@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-    if(isset($_POST['submit'])){
+    if(isset($_POST['login'])){
         login();
     } 
 
@@ -25,7 +25,7 @@ include("message.php");
         $_SESSION['users']['email'] = $row['email'];
         $_SESSION['users']['country'] = $row['country'];
         $_SESSION['message'] = '<p>Welcome, ' . $_SESSION['users']['firstname'] . ' ' . $_SESSION['users']['lastname'] . '</p>';
-        header( "refresh:0;url=index.php?menu=7" );
+        header( "refresh:0;url=index.php" );
 
     }
 

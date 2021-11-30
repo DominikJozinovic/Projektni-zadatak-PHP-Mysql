@@ -14,10 +14,10 @@ include("registration.js");
             <h2>Dobrodošli natrag!</h2>
          
             <form action=""  id="login" name="login"  formmethod="POST">
-            <input type="hidden" id="_action_" name="_action_" value="TRUE">
+            <input type="hidden" id="_action_" name="authenticationForm" value="TRUE">
               <input type= "email" class="input-box" placeholder="Adresa e-pošte" required>
               <input type= "password" class="input-box" placeholder="Lozinka" required>
-              <button type="submit" class="submit-btn" name="login">Prijavi se</button>
+              <button type="submit" class="submit-btn" name="loginn">Prijavi se</button>
               <input type="checkbox"><span> Zapamti me</span>
               <button type="button" class="btnc" onclick="openRegister()"  >Želim postati Gladiator</button>';
               include ("login.php");

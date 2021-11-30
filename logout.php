@@ -10,5 +10,5 @@
 
 	$_SESSION['users']['valid'] = 'false';
     	
-	header("Location: index.php?menu=1");
+	header("Location:index.php?menu=1");
 	exit;
