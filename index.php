@@ -47,7 +47,10 @@ print '
 <main>
 <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">';
 
-
+if (isset($_SESSION['message'])) {
+  print $_SESSION['message'];
+  unset($_SESSION['message']);
+}
 
 if (!isset($menu) || $menu == 1) { include("home.php");}
 
