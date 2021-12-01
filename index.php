@@ -71,6 +71,9 @@ else if ($menu == 6) { include("gallery.php"); }
 else if ($menu == 7) { include("clanstvo.php"); }
 
 
+
+
+
 print '
       <footer class="footer-distributed">
         <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">

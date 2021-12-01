@@ -1,7 +1,7 @@
 
 <?php 
 
-include ("dbconn.php");
+
 
 
   print '

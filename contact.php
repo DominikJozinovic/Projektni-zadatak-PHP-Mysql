@@ -1,5 +1,5 @@
 <?php
-include ("contact_mail.php");
+
 print '
       
 
@@ -21,7 +21,7 @@ print '
 				<option value=""class="field">Odaberite državu stanovanja</option>';
 				
 				$query  = "SELECT * FROM countries";
-				$result = @mysqli_query($MySQL, $query);
+				$result = @mysqli_query($db, $query);
 				while($row = @mysqli_fetch_array($result)) {
 					print '<option class="field" value="' . $row['country_code'] . '">' . $row['country_name'] . '</option>';
 				}

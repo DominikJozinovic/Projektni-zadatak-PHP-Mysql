@@ -21,15 +21,9 @@
              <a href="index.php?menu=6">🖼️Galerija teretane</a>
             </li>
            <li>
-             <a href="index.php?menu=7">👑Arena</a>
-            </li>';
-            if (!isset($_SESSION['users']['valid']) || $_SESSION['users']['valid'] == 'false') {
-              print'<li style="float: right; margin-right: 40px;"><a href="index.php?menu=8">Login</a></li>';
-          }else if ($_SESSION['users']['valid'] == 'true') {
-              print'<li style="float: right; margin-right: 40px;"><a href="logout.php">Log out</a></li>
-              <li style="float: right; margin-right: 40px;"><a class="user"  style="cursor:default;">'.$_SESSION['users']['firstname'].'</a></li>';
-          }
-          print ' 
+             <a href="index.php?menu=7">👑Članstvo</a>
+            </li>
+
         </ul>
         
         <div class="burgermenu">
